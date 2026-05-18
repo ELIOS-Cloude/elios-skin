@@ -26,9 +26,9 @@
 .ds4 .trigger {
     width: 99px;
     height: 90px;
-    background: rgba(138, 43, 226, 0);
+    background: rgba(138, 43, 226, 0.15);
     border-radius: 50% 50% 0 0;
-    transition: all 0.15s ease;
+    box-shadow: inset 0 0 10px rgba(138, 43, 226, 0.3);
 }
 
 .ds4 .trigger.left {
@@ -37,12 +37,6 @@
 
 .ds4 .trigger.right {
     float: right;
-}
-
-.ds4 .trigger.pressed {
-    background: rgba(138, 43, 226, 0.4);
-    box-shadow: 0 0 25px rgba(138, 43, 226, 1), inset 0 0 15px rgba(255, 255, 255, 0.3);
-    transform: translateY(3px);
 }
 
 /* === BUMPERS L1/R1 === */
@@ -71,9 +65,9 @@
 }
 
 .ds4 .bumper.pressed {
-    background: rgba(138, 43, 226, 0.5);
-    box-shadow: 0 0 20px rgba(138, 43, 226, 1), inset 0 0 10px rgba(255, 255, 255, 0.4);
-    transform: scale(1.08);
+    background: rgba(138, 43, 226, 0.6);
+    box-shadow: 0 0 25px rgba(138, 43, 226, 1), inset 0 0 15px rgba(255, 255, 255, 0.4);
+    transform: scale(1.1);
 }
 
 /* === TOUCHPAD === */
@@ -87,8 +81,8 @@
 }
 
 .ds4 .touchpad.pressed {
-    box-shadow: 0 0 30px rgba(138, 43, 226, 0.9), inset 0 0 20px rgba(138, 43, 226, 0.3);
-    transform: scale(1.02);
+    box-shadow: 0 0 35px rgba(138, 43, 226, 0.9), inset 0 0 25px rgba(138, 43, 226, 0.4);
+    transform: scale(1.03);
 }
 
 /* === PS BUTTON === */
@@ -104,9 +98,9 @@
 }
 
 .ds4 .meta.pressed {
-    background: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 0 35px rgba(255, 255, 255, 1), inset 0 0 15px rgba(255, 255, 255, 0.5);
-    transform: scale(1.15);
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 1), inset 0 0 20px rgba(255, 255, 255, 0.6);
+    transform: scale(1.2);
 }
 
 /* === SHARE/OPTIONS === */
@@ -129,9 +123,9 @@
 
 .ds4 .back.pressed,
 .ds4 .start.pressed {
-    background: rgba(138, 43, 226, 0.5);
-    box-shadow: 0 0 18px rgba(138, 43, 226, 1), inset 0 0 10px rgba(255, 255, 255, 0.3);
-    transform: scale(1.12);
+    background: rgba(138, 43, 226, 0.6);
+    box-shadow: 0 0 22px rgba(138, 43, 226, 1), inset 0 0 12px rgba(255, 255, 255, 0.4);
+    transform: scale(1.15);
 }
 
 .ds4 .back {
@@ -161,7 +155,7 @@
 }
 
 .ds4 .button.pressed {
-    transform: scale(1.2);
+    transform: scale(1.25);
 }
 
 .ds4 .a {
@@ -170,8 +164,8 @@
 }
 
 .ds4 .a.pressed {
-    background: rgba(100, 200, 255, 0.4);
-    box-shadow: 0 0 30px rgba(100, 200, 255, 1), inset 0 0 15px rgba(100, 200, 255, 0.6);
+    background: rgba(100, 200, 255, 0.5);
+    box-shadow: 0 0 35px rgba(100, 200, 255, 1), inset 0 0 20px rgba(100, 200, 255, 0.7);
 }
 
 .ds4 .b {
@@ -180,8 +174,8 @@
 }
 
 .ds4 .b.pressed {
-    background: rgba(255, 100, 100, 0.4);
-    box-shadow: 0 0 30px rgba(255, 100, 100, 1), inset 0 0 15px rgba(255, 100, 100, 0.6);
+    background: rgba(255, 100, 100, 0.5);
+    box-shadow: 0 0 35px rgba(255, 100, 100, 1), inset 0 0 20px rgba(255, 100, 100, 0.7);
 }
 
 .ds4 .x {
@@ -190,8 +184,8 @@
 }
 
 .ds4 .x.pressed {
-    background: rgba(255, 100, 200, 0.4);
-    box-shadow: 0 0 30px rgba(255, 100, 200, 1), inset 0 0 15px rgba(255, 100, 200, 0.6);
+    background: rgba(255, 100, 200, 0.5);
+    box-shadow: 0 0 35px rgba(255, 100, 200, 1), inset 0 0 20px rgba(255, 100, 200, 0.7);
 }
 
 .ds4 .y {
@@ -200,8 +194,8 @@
 }
 
 .ds4 .y.pressed {
-    background: rgba(100, 255, 150, 0.4);
-    box-shadow: 0 0 30px rgba(100, 255, 150, 1), inset 0 0 15px rgba(100, 255, 150, 0.6);
+    background: rgba(100, 255, 150, 0.5);
+    box-shadow: 0 0 35px rgba(100, 255, 150, 1), inset 0 0 20px rgba(100, 255, 150, 0.7);
 }
 
 /* === ANALOG STICKS === */
@@ -218,14 +212,13 @@
     height: 94px;
     width: 94px;
     border-radius: 50%;
-    background: rgba(0, 0, 0, 0);
-    transition: all 0.1s ease;
+    background: rgba(138, 43, 226, 0.2);
+    box-shadow: inset 0 0 15px rgba(138, 43, 226, 0.4);
 }
 
 .ds4 .stick.pressed {
-    background: rgba(138, 43, 226, 0.5);
-    box-shadow: 0 0 35px rgba(138, 43, 226, 1), inset 0 0 20px rgba(138, 43, 226, 0.7);
-    transform: scale(1.15);
+    background: rgba(138, 43, 226, 0.6);
+    box-shadow: 0 0 40px rgba(138, 43, 226, 1), inset 0 0 25px rgba(138, 43, 226, 0.8);
 }
 
 .ds4 .stick.left {
@@ -288,9 +281,9 @@
 }
 
 .ds4 .face.pressed {
-    background: rgba(138, 43, 226, 0.5);
-    box-shadow: 0 0 25px rgba(138, 43, 226, 1), inset 0 0 15px rgba(138, 43, 226, 0.6);
-    transform: scale(1.15);
+    background: rgba(138, 43, 226, 0.6);
+    box-shadow: 0 0 28px rgba(138, 43, 226, 1), inset 0 0 18px rgba(138, 43, 226, 0.7);
+    transform: scale(1.18);
 }
 
 .ds4.half {
